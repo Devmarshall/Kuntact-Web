@@ -1,0 +1,27 @@
+{
+  "name": "kuntact-web",
+  "version": "1.0.0",
+  "description": "Top Secret Stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devmarshall/Kuntact-Web.git"
+  },
+  "author": "devMarshall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devmarshall/Kuntact-Web/issues"
+  },
+  "homepage": "https://github.com/Devmarshall/Kuntact-Web#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-router": "^0.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
+}
