@@ -7,6 +7,7 @@ body {
 }
 
 nav {
+    position: relative;
     margin-right: 40px;
 }
 
@@ -30,6 +31,11 @@ button {
     background-color: #6c0000 !important;
     text-align: center;
     border-radius: 20px !important;
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin-bottom: 50px;
 }
 
 hr {
@@ -43,4 +49,30 @@ hr {
     margin-left: 25% !important;
     margin-right: 25% !important;
     width: 50% !important;
+}
+
+.authForm {
+    text-align: center;
+    margin-top: 10% !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+    width: 70% !important;
+}
+
+.form-control {
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.signup-success {
+    margin: 20%;
+    text-align: center;
+}
+
+button .btn .btn-primary .add-detail {
+    margin-bottom: 10px;
 }

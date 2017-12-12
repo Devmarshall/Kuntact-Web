@@ -23,7 +23,6 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-
 var server = app.listen(3006, 'localhost', function () {
     var serverAddr = server.address().address;
     var serverPort = server.address().port;

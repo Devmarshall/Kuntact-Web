@@ -12,11 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
 
-
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -32,7 +30,7 @@
     <title>Kuntact</title>
 </head>
 
-<nav ng-controller="NavController">
+<nav ng-if="loggedIn" ng-controller="NavController">
     <ul class="nav justify-content-end">
         <li class="nav-item">
             <a class="nav-link" href="#">Feed</a>
@@ -44,13 +42,24 @@
             <a class="nav-link" href="">Chats</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">My Account</a>
+            <a class="nav-link" ng-click='logOut()' href="">Logout</a>
         </li>
     </ul>
+</nav>
+
+<nav ng-if="!loggedIn" ng-controller="NavController">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" ui-sref="login">Log In</a>
+        </li>
 </nav>
 
 <body>
     <div ui-view class=""></div>
 </body>
+
+<div ng-if="loggedIn">
+    <h4>User is logged in</h4>
+</div>
 
 </html>
