@@ -33,7 +33,22 @@ const serverUrl = 'http://localhost:3010';
         }
     });
 
-    app.controller('AuthController', function ($rootScope, $scope, $state, $http) {
+    app.controller('AuthController', function ($rootScope, $scope, $state, $http, geolocation) {
+
+        var currentLocation;
+
+        $scope.getLocation = function () {
+
+            geolocation.getLocation().then(function (data) {
+                currentLocation = {
+                    lat: data.coords.latitude,
+                    long: data.coords.longitude
+                };
+            });
+
+            console.log(currentLocation);
+
+        }
 
         $scope.signup = function (newUser) {
 

@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('Kuntact', ['ui.router']);
+    var app = angular.module('Kuntact', ['ui.router', 'geolocation']);
 
     app.config(function ($stateProvider, $urlRouterProvider) {
 

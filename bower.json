@@ -1,0 +1,21 @@
+{
+  "name": "kuntact-web",
+  "description": "Top Secret Stuff",
+  "main": "index.js",
+  "authors": [
+    "devMarshall"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Devmarshall/Kuntact-Web",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs-geolocation": "^0.1.1"
+  }
+}
